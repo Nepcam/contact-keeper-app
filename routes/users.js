@@ -1,15 +1,15 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
-const jwt = require('jsonwetoken');
+const jwt = require('jsonwebtoken');
 const config = require('config');
-const {check, validationResult} = require('express-validator');
+const {check, validationResult} = require('express-validator/check');
 
 const User = require('../models/User');
 
-// @route POST api/users
-// @desc Register a user
-// @access Public
+// @route     POST api/users
+// @desc      Regiter a user
+// @access    Public
 router.post(
   '/',
   [
@@ -67,7 +67,7 @@ router.post(
         }
       );
     } catch (err) {
-      console.log(err.message);
+      console.error(err.message);
       res.status(500).send('Server Error');
     }
   }
