@@ -35,21 +35,21 @@ const ContactForm = () => {
         placeholder='name'
         name='name'
         value={name}
-        onchange={onchange}
+        onChange={onChange}
       />
       <input
         type='email'
         placeholder='Email'
         name='email'
         value={email}
-        onchange={onchange}
+        onChange={onChange}
       />
       <input
         type='text'
         placeholder='Phone'
         name='phone'
         value={phone}
-        onchange={onchange}
+        onChange={onChange}
       />
       <h5>Contact Type</h5>
       <input
@@ -57,7 +57,7 @@ const ContactForm = () => {
         name='type'
         value='personal'
         checked={type === 'personal'}
-        onchange={onchange}
+        onChange={onChange}
       />{' '}
       Personal{' '}
       <input
@@ -65,7 +65,7 @@ const ContactForm = () => {
         name='type'
         value='professional'
         checked={type === 'professional'}
-        onchange={onchange}
+        onChange={onChange}
       />{' '}
       Professional
       <div>
