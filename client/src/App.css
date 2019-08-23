@@ -385,7 +385,6 @@ table th {
 }
 
 /* Animation (Add After) */
-/* Animation  */
 .item-enter {
   opacity: 0;
 }
@@ -441,4 +440,3 @@ table th {
     justify-content: center;
   }
 }
-
